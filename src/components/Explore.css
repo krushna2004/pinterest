@@ -1,0 +1,87 @@
+/* ImageList.css */
+/* Reset some default styles */
+
+/* CategoryList.css */
+/* Explore.css */
+/* Add this CSS to center the title and category */
+
+.App {
+  text-align: center; /* Center the text horizontally */
+}
+
+h1 {
+  margin: 20px 0; /* Add some spacing between the title and category */
+}
+
+.image-container {
+  text-align: center;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+
+.category-list li {
+  
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f06dac;
+  color: #fff;
+  border: 1px solid #90969b;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-list li.active {
+  background-color: #bdc3c9;
+  border-color: #0056b3;
+}
+
+.category-list li:hover {
+  background-color: #ad085d;
+  border-color: #a7adb5;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles for the header */
+.navbar {
+  background-color: white;
+}
+
+/* Container for the photo results */
+.photo-results {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 8px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for individual photos in the grid */
+.photo-card {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 8px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the "like" and "save" buttons (if applicable) */
+.photo-card:hover .photo-actions {
+  opacity: 1;
+}
+
+/* Add a hover effect to the images */
+.photo-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

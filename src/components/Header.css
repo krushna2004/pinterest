@@ -1,0 +1,114 @@
+  /* Basic styles for the header */
+
+  .btn-outline-success {
+    color: pink;
+    border-color: pink;
+   
+  }
+  
+  /* Change the color of the login button */
+  .btn-outline-info {
+    color: pink;
+    border-color: pink;
+  }
+
+  #b{
+    background-color: #f06dac;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  #b:hover{
+    background-color: #0056b3;
+  }
+  
+
+
+  .navbar {
+    background-color: white;
+  }
+  
+  /* Container for the photo results */
+  .photo-results {
+    columns: 5; /* Six columns per row */
+    column-gap: 10px;
+    margin: 20px;
+  }
+  
+  /* Styling for individual photos in the grid */
+  .photo-results img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering the column width */
+    margin-bottom: 10px; /* Add spacing between images */
+    border-radius: 10px;
+    box-shadow: 8px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (min-width: 768px) {
+    .photo-results img {
+      margin-bottom: 20px; /* Increase spacing between images for larger screens */
+    }
+  }
+
+ /* Style for the "like" and "save" buttons */
+.photo-container {
+  position: relative;
+  margin: 10px;
+}
+
+/* Style for the "like" and "save" buttons */
+/* Style for the "like" and "save" buttons */
+.photo-container {
+  position: relative;
+  margin: 10px;
+}
+
+.photo-actions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0; /* Initially hide the buttons */
+  transition: opacity 0.3s ease; /* Add a transition for smooth visibility change */
+}
+
+/* White background with black text for the buttons */
+.photo-actions button {
+  background-color: white;
+  color: black;
+  border: 1px solid black; /* Add a border for better visibility */
+}
+
+/* Show the buttons on hover */
+.photo-container:hover .photo-actions {
+  opacity: 1;
+}
+
+/* Header.css */
+/* Add this CSS to change green and blue colors to white */
+
+/* Change the color of the liked button to white */
+.btn-outline-primary.liked {
+  color: white;
+  border-color: white;
+}
+
+/* Change the color of the saved button to white */
+.btn-outline-success.saved {
+  color: white;
+  border-color: white;
+}
+
+
+/* Style for liked and saved buttons */
+
+
+/* Add a hover effect to the images */
+.photo-container:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

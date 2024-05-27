@@ -1,0 +1,58 @@
+/* CSS for a Pinterest-style grid layout with hover effects and buttons */
+
+/* Create a grid layout with auto-fill columns */
+.pinterest-layout {
+    columns: 5; /* Six columns per row */
+    column-gap: 10px;
+    margin: 30px;
+  }
+  
+  /* Style for individual grid items */
+  .pinterest-item {
+    position: relative; /* Position for button placement */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Add a smooth transition for hover effect */
+    margin-bottom: 10px; /* Add space between items */
+  }
+  
+  /* Hover effect for grid items */
+  .pinterest-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    margin-bottom: 20px; /* Increase the margin during hover to prevent overlap */
+  }
+  
+  /* Style for images within grid items */
+  .pinterest-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering the column width */
+    border-radius: 8px; /* Adjust the radius to match .pinterest-item's radius */
+  }
+  
+  /* Style for "like" and "save" buttons */
+  .photo-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0; /* Initially hide the buttons */
+    transition: opacity 0.2s ease; /* Add a transition for smooth visibility change */
+  }
+  
+  /* White background with black text for the buttons */
+  .photo-actions button {
+    background-color: white;
+    color: black;
+    border: 1px solid black; /* Add a border for better visibility */
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  /* Show the buttons on hover */
+  .pinterest-item:hover .photo-actions {
+    opacity: 1;
+  }
+  
